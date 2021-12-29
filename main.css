@@ -1,0 +1,182 @@
+body {
+	background-color: #d2bc1e;
+
+}
+
+.slider__list {
+	/* width: 100%; */
+	/* height: 100vh; */
+	/* display: flex;
+	justify-content: center;
+	align-items: center; */
+	
+}
+
+.slider__items {
+	position: relative;
+	margin: 20px 10px;
+	/* width: 320px; */
+    height: 480px;
+}
+
+.slider__image {
+	width: 100%;
+	height: 480px;
+}
+
+.slider__image img {
+	width: 100%;
+    height: 480px;
+	object-fit: cover;
+	border-radius: 6px;
+	position: relative;
+	overflow: hidden;
+}
+
+.slider__overplay {
+	position: absolute;
+	width: inherit;
+    top: 60%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    background-color: #ffffff;
+    clip-path: ellipse(64% 100% at 50% 100%);
+	border-radius: 6px;
+	padding-top: 55px;
+    text-align: center;
+}
+
+.slider__cart {
+	position: absolute;
+    background-color: #54CA76;
+    padding: 20px 10px;
+    border-radius: 50%;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+	transition: .4s linear;
+}
+
+.slider__icon i {
+	font-size: 2.7rem;
+    color: #ffffff;
+}
+
+.slider__heading {
+	padding-bottom: 10px;
+}
+
+.slider__heading h2 {
+	font-size: 2.4rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    line-height: 2.4rem;
+    color: #555555;
+}
+
+.slider__pirce {
+	font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+del {
+    padding: 0 10px;
+    color: #C4C7CC;
+}
+
+span {
+    padding: 0 10px;
+    color: #90D9AB;
+}
+
+.slider__title {
+	padding-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.4rem;
+}
+
+.rating {
+	flex: 1;
+    border-right: 1px solid #bbb9b9;
+    color: #deeb19;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+i.fas.fa-star {
+    margin-right: 10px;
+}
+
+i.fas.fa-map-marker-alt {
+    margin-right: 10px;
+}
+
+.address {
+	flex: 1;
+	display: flex;
+    justify-content: center;
+    align-items: flex-start;
+	color: red;
+}
+
+button.slick-prev.slick-arrow,
+button.slick-next.slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 20;
+    background-color: white;
+    padding: 10px 13px;
+    border-radius: 57px;
+    color: black;
+	transition:  .4s linear;
+}
+
+button.slick-prev.slick-arrow {
+	left: 0%;
+}
+
+button.slick-next.slick-arrow {
+	right: 0%;
+}
+
+button.slick-arrow:hover {
+	background-color: #19e5ec;
+	color: #ffffff;
+}
+
+ul.slick-dots {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+	list-style: none;
+}
+
+ul li {
+	padding: 10px 6px;
+}
+
+li button {
+    cursor: pointer;
+    font-size: 0;
+    padding: 6px;
+	transition:  .4s linear;
+    border-radius: 50%;
+}
+
+li button:hover {
+	background-color: #19e5ec;
+}
+
+.slick-dots li.slick-active button {
+	background-color: #19e5ec;
+}
+
+
